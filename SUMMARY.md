@@ -1,3 +1,5 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [ES6 學習紀錄](README.md)
+* [let和const](chapter1.md)
+
