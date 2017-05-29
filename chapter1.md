@@ -28,28 +28,29 @@ console.log(j);    //j is not defined
 
 由以上兩個範例，可以知道`let`只能在區塊內作用，在區塊外使用會發生錯誤。
 
-另外在`let`宣告變數後，若在宣告之前使用相同的變數名稱則會出錯。
+---
+
+另外在`let`宣告變數後，若在宣告之前使用相同的變數名稱則會出錯，這是因為暫時性的死區temporal dead zone\(TDZ\)的關係。
 
 ```js
 var str = 'hello world';    //str is not defined
 
 if (true) {
+    str = 'hi world';       //str is not defined
+    
+    let str;
+    console.log(str);       //undefined
+
     str = 'hi world';
-    let str = '';
+    console.log(str);       //hi world
+
 }
 ```
 
+`let`也不能重複宣告同一個變數，在同一個區塊內。
+
 ```js
-if (true) {
-  str = 'hello world'; // ReferenceError
-  console.log(str); // ReferenceError
 
-  let str;
-  console.log(str); // undefined
-
-  str = 123;
-  console.log(str); // 123
-}
 ```
 
 
