@@ -1,18 +1,4 @@
 # ES6 學習紀錄筆記
 
-1.\[let和const命令\]\[1\]
-
-2.\[[test](//chapter1.html)\]\(/chapter1.html\)
-
-\[1\]: ../chapter1.html
-
-\[let\]:\(/chapter1.html\)\`\`\`
-
-\[let\]\(content/chapter1.html\)
-
-
-
-
-
-
+1.[let和const命令](/chapter1.html "let and const")
 
