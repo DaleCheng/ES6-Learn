@@ -28,8 +28,6 @@ console.log(j);    //j is not defined
 
 由以上兩個範例，可以知道`let`只能在區塊內作用，在區塊外使用會發生錯誤。
 
----
-
 另外在`let`宣告變數後，若在宣告之前使用相同的變數名稱則會出錯，這是因為暫時性的死區temporal dead zone\(TDZ\)關係。
 
 ```js
