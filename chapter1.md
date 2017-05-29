@@ -31,11 +31,24 @@ console.log(j);    //j is not defined
 另外在`let`宣告變數後，若在宣告之前使用相同的變數名稱則會出錯。
 
 ```js
-var str = 'hello world';
+var str = 'hello world';    //str is not defined
 
 if (true) {
     str = 'hi world';
-    let str  = '';
+    let str = '';
+}
+```
+
+```js
+if (true) {
+  str = 'hello world'; // ReferenceError
+  console.log(str); // ReferenceError
+
+  let str;
+  console.log(str); // undefined
+
+  str = 123;
+  console.log(str); // 123
 }
 ```
 
