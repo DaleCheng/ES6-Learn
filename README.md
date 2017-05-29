@@ -4,9 +4,5 @@
 
 2.\[test\]\(/chapter1.html\)
 
-
-
-\[1\]: /chapter1.html
-
-
+\[1\]:../chapter1.html
 
