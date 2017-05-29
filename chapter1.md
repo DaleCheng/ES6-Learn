@@ -1,4 +1,4 @@
-# let和const {#let-const-}
+# let和const命令 {#let-const-}
 
 `let`只作用於區塊內
 

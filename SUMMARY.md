@@ -1,5 +1,5 @@
 # Summary
 
 * [ES6 學習紀錄筆記](README.md)
-* [let和const](chapter1.md)
+* [1.let和const命令](chapter1.md)
 
