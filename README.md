@@ -2,15 +2,17 @@
 
 1.\[let和const命令\]\[1\]
 
-2.\[test\]\(/chapter1.html\)
+2.\[[test](//chapter1.html)\]\(/chapter1.html\)
 
 \[1\]: ../chapter1.html
 
-\[let\]:\(/chapter1.html\)
+\[let\]:\(/chapter1.html\)\`\`\`
 
-```
-[Yahoo 奇摩](http://tw.yahoo.com)
-```
+\[let\]\(content/chapter1.html\)
+
+
+
+
 
 
 
