@@ -6,9 +6,13 @@
 
 \[1\]: ../chapter1.html
 
-
-
 \[let\]\(/chapter1.html\)
+
+
+
+```
+[Yahoo 奇摩](http://tw.yahoo.com)
+```
 
 
 
