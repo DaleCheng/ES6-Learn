@@ -71,11 +71,11 @@ console.log(PI);            //3.1415
 PI = 0;                     //TypeError: Assignment to constant variable.
 ```
 
-另外經`const`宣告的參數要馬上初始化，賦予值，否則將會直接出錯
+另外經`const`宣告的參數要馬上初始化賦予值，否則將會直接出錯
 
 ```js
 const PI;                  //SyntaxError: Missing initializer in const declaration
 ```
 
-
+其餘用法與規定都與`let`一樣
 
