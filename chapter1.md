@@ -1,3 +1,18 @@
-# First Chapter
+# let和const命令 {#let-const-}
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+let只作用於區塊內
+
+```js
+{
+    var a = 1;
+    var b = 1;
+}
+
+console.log(a);    //1
+console.log(b);    //b is not defined
+```
+
+
+
+
+
