@@ -29,7 +29,7 @@ console.log(name);     //Dale
 console.log(age);      //29
 ```
 
-特別註記物件的嵌套：
+特別註記-物件的嵌套：
 
 ```js
 let jsonData = {
@@ -37,11 +37,16 @@ let jsonData = {
     age: 29,
     hobby: {
         music: 'Jazz',
-        sport: 'basketball'
+        sport: 'Basketball'
     }
 }
 
-let {name, age, hobby:{music, sport}} = jsonData;
+let {name, age, hobby: {music, sport}} = jsonData;
+
+console.log(name);     //Dale
+console.log(age);      //29
+console.log(music);    //Jazz
+console.log(sport);    //Basketball
 ```
 
 
