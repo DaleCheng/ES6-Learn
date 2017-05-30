@@ -8,16 +8,40 @@ console.log(name1);    //Dale
 
 let [name1, [name2, name3]] = ['Dale', ['Jack', 'Bon']];
 console.log(name2);    //Jack
+
+let [name1 = name2, name2 = 'Jack'] = [];
+console.log(name1);    //undefined
+
+let {name, age} = {name: 'Dale', age: 29};
+console.log(name);     //Dale
+console.log(age);      //29
 ```
 
 也可以在宣告時，直接給予預設值：
 
 ```js
 let[name1 = 'Dale', name2] = [, 'Jack'];
+console.log(name1);    //Dale
+console.log(name2);    //Jack
 
+let {name = 'Dale', age = 29} = {};
+console.log(name);     //Dale
+console.log(age);      //29
+```
 
-let [x, y = 'b'] = ['a']; // x='a', y='b'
-let [x, y = 'b'] = ['a', undefined]; // x='a', y='b'
+特別註記物件的嵌套：
+
+```js
+let jsonData = {
+    name: 'Dale',
+    age: 29,
+    hobby: {
+        music: 'Jazz',
+        sport: 'basketball'
+    }
+}
+
+let {name, age, hobby:{music, sport}} = jsonData;
 ```
 
 
