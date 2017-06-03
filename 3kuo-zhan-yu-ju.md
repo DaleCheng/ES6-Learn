@@ -47,6 +47,11 @@ function add(arg1, ...args, arg2) {
 ```js
 console.log(...[1, 2, 3]);    //1 2 3
 
+let numArray1 = [1, 2, 3];
+let numArray2 = [4, 5, 6];
+console.log([...numArray1, ...numArray2]);    //[1, 2, 3, 4, 5, 6]
+
+
 ```
 
 組合運用
