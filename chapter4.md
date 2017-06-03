@@ -4,7 +4,7 @@
 
 ```js
 function makeCar() {
-    
+    console.log('get car...');
 }
 ```
 
