@@ -3,7 +3,9 @@
 箭頭函數可以減少程式碼
 
 ```js
-function 
+function makeCar() {
+    
+}
 ```
 
 
