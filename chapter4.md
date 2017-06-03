@@ -52,25 +52,22 @@ var counter = num => sum + num;
 
 ---
 
-箭頭函數在`this`上需特別注意，他會指向定義時所在的對象
+箭頭函數在`this`上需特別注意，他會指向定義時所在的對象，以下範例為例:
+
+若是按照原本去呼叫會得到0，因為這邊的`this`是回掉函數的，而非makeWeapon函數的
 
 ```js
 function makeWeapon() {
     this.tankNum = 0;
-    
+
     //Before
     setInterval(function() {
-        this.tankNum++;
-    }, 5000);
-    
+        this.tankNum++;                            // this指向window或undefined
+    }, 1000);
+
     //After
-    setInterval(() => this.tankNum++, 5000);
+    setInterval(() => this.tankNum++, 1000);
 }
-
-
-
-
-
 ```
 
 
