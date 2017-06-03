@@ -20,33 +20,11 @@ testFn('Dale', 'Ben', 'John');
 ```js
 function add(arg1, arg2, ...args) {
     let sum = 0;
-    for (var value : args) {
-        sum += value;
+    for (var num : args) {
+        sum += num;
     }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ```
 let numArray = [1, 2, 3, 4, 5];
