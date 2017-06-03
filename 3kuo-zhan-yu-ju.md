@@ -1,4 +1,4 @@
-# 擴展語句與Rest參數 {#let-const-}
+# 擴展運算符與Rest參數 {#let-const-}
 
 `rest`參數用於函數的傳入
 
@@ -42,7 +42,29 @@ function add(arg1, ...args, arg2) {
 }
 ```
 
+擴展運算符像是rest參數的逆運算，用於數組的解構
 
+```js
+console.log(...[1, 2, 3]);    //1 2 3
+
+```
+
+組合運用
+
+```js
+let numArray = [1, 2, 3, 4, 5];
+
+function add(...args) {        //rest參數
+    let sum = 0;
+    for (let num of args) {
+        sum += num;
+    }
+
+    return sum;
+}
+
+console.log(add(...numArray)); //擴展運算符
+```
 
 
 
