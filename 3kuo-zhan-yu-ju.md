@@ -31,6 +31,7 @@ console.log(add(1, 2, 3, 4, 5));    //12
 ```
 
 ```js
+//SyntaxError
 function add(arg1, ...args, arg2) {
     let sum = 0;
     for (let num of args) {
@@ -42,29 +43,6 @@ function add(arg1, ...args, arg2) {
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-let numArray = [1, 2, 3, 4, 5];
-```
-
-```js
-console.log(numArray);        //[1, 2, 3, 4, 5]
-console.log(...numArray);     //1 2 3 4 5
-```
 
 
 
