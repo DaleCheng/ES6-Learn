@@ -57,7 +57,7 @@ console.log([...numArray1, ...numArray2]);    //[1, 2, 3, 4, 5, 6]
 ```js
 let numArray = [1, 2, 3, 4, 5];
 
-function add(...args) {        //rest參數
+function addNumber(...args) {        //rest參數
     let sum = 0;
     for (let num of args) {
         sum += num;
@@ -66,7 +66,7 @@ function add(...args) {        //rest參數
     return sum;
 }
 
-console.log(add(...numArray)); //擴展運算符
+console.log(addNumber(...numArray)); //擴展運算符
 ```
 
 與解構賦值搭配
