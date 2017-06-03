@@ -18,7 +18,7 @@ testFn('Dale', 'Ben', 'John');
 需注意的是，`resr`參數一定要放在最後面，否則會出錯
 
 ```js
-function add(arg1, arg2, ...args) {
+function addNumber(arg1, arg2, ...args) {
     let sum = 0;
     for (let num of args) {
         sum += num;
@@ -27,12 +27,12 @@ function add(arg1, arg2, ...args) {
     return sum;
 }
 
-console.log(add(1, 2, 3, 4, 5));    //12
+console.log(addNumber(1, 2, 3, 4, 5));    //12
 ```
 
 ```js
 //SyntaxError
-function add(arg1, ...args, arg2) {
+function addNumber(arg1, ...args, arg2) {
     let sum = 0;
     for (let num of args) {
         sum += num;
@@ -42,7 +42,7 @@ function add(arg1, ...args, arg2) {
 }
 ```
 
-擴展運算符像是rest參數的逆運算，用於數組的解構
+擴展運算符像是rest參數的逆運算，可以把陣列轉乘列表，也可以合併陣列
 
 ```js
 console.log(...[1, 2, 3]);    //1 2 3
@@ -50,8 +50,6 @@ console.log(...[1, 2, 3]);    //1 2 3
 let numArray1 = [1, 2, 3];
 let numArray2 = [4, 5, 6];
 console.log([...numArray1, ...numArray2]);    //[1, 2, 3, 4, 5, 6]
-
-
 ```
 
 組合運用
@@ -69,6 +67,14 @@ function add(...args) {        //rest參數
 }
 
 console.log(add(...numArray)); //擴展運算符
+```
+
+與解構賦值搭配
+
+```
+let [first, ...rest] = [1, 2, 3, 4, 5];
+first //1
+rest  //[2, 3, 4, 5]
 ```
 
 
