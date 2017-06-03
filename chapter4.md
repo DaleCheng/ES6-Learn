@@ -3,8 +3,8 @@
 箭頭函數可以減少程式碼
 
 ```js
-function makeCar() {
-    console.log('get car...');
+function makeWeapon() {
+    console.log('get tank...');
 }
 ```
 
