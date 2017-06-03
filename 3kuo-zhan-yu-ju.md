@@ -15,8 +15,44 @@ testFn('Dale', 'Ben', 'John');
 //John
 ```
 
+需注意的是，`resr`參數一定要放在最後面，否則會出錯
+
 ```js
+function add(arg1, arg2, ...args) {
+    let sum = 0;
+    for (var value : args) {
+        sum += value;
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
 let numArray = [1, 2, 3, 4, 5];
+```
+
+```js
 console.log(numArray);        //[1, 2, 3, 4, 5]
 console.log(...numArray);     //1 2 3 4 5
 ```
