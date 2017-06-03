@@ -23,12 +23,39 @@ function add(arg1, arg2, ...args) {
     for (let num of args) {
         sum += num;
     }
-    
+
     return sum;
 }
 
-console.log(add(1, 2, 3, 4, 5));    //
+console.log(add(1, 2, 3, 4, 5));    //12
 ```
+
+```js
+function add(arg1, ...args, arg2) {
+    let sum = 0;
+    for (let num of args) {
+        sum += num;
+    }
+
+    return sum;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```
 let numArray = [1, 2, 3, 4, 5];
