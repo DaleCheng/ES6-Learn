@@ -56,11 +56,21 @@ var counter = num => sum + num;
 
 ```js
 function makeWeapon() {
-    let tankNum = 0;
-    let fighterNum = 0;
+    this.tankNum = 0;
     
+    //Before
+    setInterval(function() {
+        this.tankNum++;
+    }, 5000);
     
+    //After
+    setInterval(() => this.tankNum++, 5000);
 }
+
+
+
+
+
 ```
 
 
