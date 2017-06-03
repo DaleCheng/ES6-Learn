@@ -9,15 +9,11 @@ function testFn(...args) {
     }
 }
 
-testFn('Dale', 'Ben', 'Jhon');
+testFn('Dale', 'Ben', 'John');
 //Dale
 //Ben
-//Jhon
+//John
 ```
-
-
-
-
 
 ```js
 let numArray = [1, 2, 3, 4, 5];
