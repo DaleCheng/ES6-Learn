@@ -54,7 +54,7 @@ var counter = num => sum + num;
 
 箭頭函數在`this`上需特別注意，他會指向定義時所在的對象，以下範例為例:
 
-若是按照原本去呼叫會得到0，因為這邊的`this`是回掉函數的，而非makeWeapon函數的
+若是按照原本去呼叫會得到0，因為這邊的`this`是回調函數的，而非makeWeapon函數的
 
 ```js
 function makeWeapon() {
