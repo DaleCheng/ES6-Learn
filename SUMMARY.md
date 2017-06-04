@@ -5,4 +5,5 @@
 * [2.解構賦值](chapter2.md)
 * [3.擴展語句與Rest參數](chapter3.md)
 * [4.箭頭函數\(=&gt;\)](chapter4.md)
+* [5.Symbol](chapter5.md)
 
